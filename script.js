@@ -42,7 +42,7 @@ imgCenarioPreJogo.onload = function() {
 };
 
 const imgCenarioJogo = new Image();
-imgCenarioJogo.src = 'Images/Gemini_Generated_Image_wc4usqwc4usqwc4u.png'; 
+imgCenarioJogo.src = 'Gemini_Generated_Image_wc4usqwc4usqwc4u.png'; 
 
 const imgFazendeiro = new Image();
 imgFazendeiro.src = 'Images/Gemini_Generated_Image_6ng3r06ng3r06ng3-removebg-preview.png'; 
