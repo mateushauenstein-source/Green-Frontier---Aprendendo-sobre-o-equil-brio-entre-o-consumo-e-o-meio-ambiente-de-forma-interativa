@@ -34,7 +34,7 @@ const somErroQuiz = new Audio('KL Peach Game Over 1.mp3');
    MAPEAMENTO E INSTANCIAÇÃO DE TEXTURAS / IMAGENS
    ========================================================================== */
 const imgCenarioPreJogo = new Image();
-imgCenarioPreJogo.src = 'Images/Gemini_Generated_Image_2p7rak2p7rak2p7r.png'; 
+imgCenarioPreJogo.src = 'Gemini_Generated_Image_2p7rak2p7rak2p7r.png'; 
 imgCenarioPreJogo.onload = function() {
     if (estadoJogo === 'PRE_JOGO' && jogoAtivo === 1) {
         desenharCiclo();
