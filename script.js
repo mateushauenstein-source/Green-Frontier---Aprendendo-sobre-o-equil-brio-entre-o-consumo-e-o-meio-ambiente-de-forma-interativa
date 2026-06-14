@@ -24,7 +24,7 @@ musicaInstrucoes.loop = true;
 const musicaPerguntas = new Audio('kim_lightyear_-_you_and_i.mp3');
 musicaPerguntas.loop = true;
 
-const musicaResultado = new Audio('sons/8bitvictory.ogg');
+const musicaResultado = new Audio('8bitvictory.ogg');
 musicaResultado.loop = true;
 
 const somAcertoQuiz = new Audio('sons/Victory!.wav');
