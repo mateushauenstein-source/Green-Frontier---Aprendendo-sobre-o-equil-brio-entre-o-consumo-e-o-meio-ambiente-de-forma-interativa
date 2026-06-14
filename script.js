@@ -18,7 +18,7 @@ somFundoJogo.loop = true;
 somFundoChefe.loop = true;
 
 /* Músicas e Efeitos do Subsistema de Quiz */
-const musicaInstrucoes = new Audio('sons/8bit_action_ending_bpm112.mp3');
+const musicaInstrucoes = new Audio('8bit_action_ending_bpm112.mp3');
 musicaInstrucoes.loop = true;
 
 const musicaPerguntas = new Audio('sons/kim_lightyear_-_you_and_i.mp3');
