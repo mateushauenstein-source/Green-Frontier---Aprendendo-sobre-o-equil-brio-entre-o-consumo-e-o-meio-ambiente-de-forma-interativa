@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Frontier</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="light-mode">
+
+    <section id="page-home" class="page active">
+        <button class="btn-plus" onclick="toggleSettings()">+</button>
+        
+        <div class="home-content">
+            <h1 class="pixel-title">GREEN FRONTIER</h1>
+            <p class="pixel-subtitle">Aprendendo sobre o equilíbrio entre a produção e o meio ambiente de forma interativa</p>
+            <button class="pixel-button" onclick="goToPage('page-selection')">JOGAR</button>
+        </div>
+
+        <div class="menu-botoes-extras">
+            <button onclick="abrirTela('tela-saiba-mais')" class="btn-extra">SAIBA MAIS</button>
+            <button onclick="abrirTela('tela-sobre-mim')" class="btn-extra">SOBRE MIM</button>
+        </div>
+
+        <div id="tela-saiba-mais" class="camada-sobreposicao" style="display: none;">
+            <div class="caixa-texto-pixel">
+                <h2>SAIBA MAIS</h2>
+                <div class="conteudo-rolavel">
+                    <h3>Produção vs. Meio Ambiente</h3>
+                    <p>O grande desafio do século XXI é produzir alimentos para uma população crescente sem esgotar os recursos naturais. O equilíbrio acontece através da <strong>Agricultura Sustentável</strong>.</p>
+                    
+                    <h3>Práticas de Equilíbrio:</h3>
+                    <ul>
+                        <li><strong>Plantio Direto:</strong> Protege o solo e mantém a umidade.</li>
+                        <li><strong>Rotação de Culturas:</strong> Mantém a terra fértil e evita pragas.</li>
+                        <li><strong>Uso de Tecnologia:</strong> Drones e sensores evitam o desperdício de água e insumos.</li>
+                    </ul>
+
+                    <h3>Intuito do Projeto</h3>
+                    <p>Este jogo foi desenvolvido para o Concurso Agrinho 2026. O objetivo é mostrar que o desenvolvimento e a natureza podem caminhar juntas. Queremos que você, jogador, entenda que o fazendeiro do futuro é o maior guardião do planeta!</p>
+                </div>
+                <button onclick="fecharTela('tela-saiba-mais')" class="btn-voltar">VOLTAR</button>
+            </div>
+        </div>
+
+        <div id="tela-sobre-mim" class="camada-sobreposicao" style="display: none;">
+            <div class="caixa-texto-pixel">
+                <h2>SOBRE MIM</h2>
+                <div class="conteudo-rolavel text-center">
+                    <p><strong>Desenvolvedor:</strong> Mateus Eduardo Hauenstein</p>
+                    <p><strong>Escola:</strong> Colégio Estadual Nereu Perondi</p>
+                    <p><strong>Série:</strong> 1° ano do Ensino Médio</p>
+                    <p><strong>Professor Orientador:</strong> Jhonattan</p>
+                    <hr>
+                    <p>"Minha motivação foi unir o mundo da tecnologia que eu amo com a importância do trabalho no campo que sustenta nosso país."</p>
+                </div>
+                <button onclick="fecharTela('tela-sobre-mim')" class="btn-voltar">VOLTAR</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="page-selection" class="page">
+        <div class="selection-container">
+            <div class="game-option" onclick="startMinigame(1)">
+                <div class="triangle-box">
+                    <img src="Images/Gemini_Generated_Image_e03jn2e03jn2e03j.png" alt="Card Defensor do Milharal" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <p class="game-desc">Defensor do Milharal: Proteja sua lavoura contra o ataque das pragas! Escolha com sabedoria entre defensivos químicos potentes ou alternativas biológicas sustentáveis para salvar a colheita sem destruir a saúde do solo.</p>
+            </div>
+
+            <div class="game-option" onclick="startMinigame(2)">
+                <div class="triangle-box">
+                    <img src="Images/Gemini_Generated_Image_3lhle93lhle93lhl.png" alt="Card Mestre da Sustentabilidade" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <p class="game-desc">Mestre da Sustentabilidade: Teste seus conhecimentos em um quiz rápido sobre cultivo, consumo consciente e preservação. Prove que você sabe como manter o equilíbrio perfeito entre a produção e a natureza!</p>
+            </div>
+
+            <div class="game-option" onclick="startMinigame(3)">
+                <div class="triangle-box" style="position: relative; overflow: hidden;">
+                    <img src="Images/Gemini_Generated_Image_b1t5mvb1t5mvb1t5.png" alt="Card Jornada do Produtor" style="width: 100%; height: 100%; object-fit: cover; filter: grayscale(50%);">
+                    <div style="position: absolute; top: 40%; left: -10%; width: 120%; background: #f1c40f; color: #000; text-align: center; font-family: 'Press Start 2P'; font-size: 14px; font-weight: bold; padding: 8px 0; transform: rotate(-15deg); border-top: 4px dashed #000; border-bottom: 4px dashed #000; z-index: 5;">
+                        EM BREVE
+                    </div>
+                </div>
+                <p class="game-desc">Jornada do Produtor: Cuide de cada etapa da sua fazenda, desde o plantio do milho até as escolhas de irrigação e adubo. Depois, encare a estrada até a cidade desviando de obstáculos e receba sua avaliação final de sustentabilidade!</p>
+            </div>
+        </div>
+        <button class="pixel-button back-btn" onclick="goToPage('page-home')">VOLTAR AO INÍCIO</button>
+    </section>
+
+    <section id="page-game" class="page">
+        <div class="game-top-bar">
+            <button class="pixel-button-small" id="btn-pause" onclick="pauseGame()">PAUSAR</button>
+            <button class="pixel-button-small" id="btn-engrenagem" onclick="toggleSettings()" style="margin-left: 10px; background-color: #7f8c8d; display: none;">⚙️</button>
+            <div class="volume-container">
+                <span>🔊</span>
+                <input type="range" id="game-volume" min="0" max="100" value="50" oninput="updateVolume(this.value)">
+            </div>
+        </div>
+
+        <div class="game-screen-area">
+            <h2 id="game-title" style="color: #90ee90"; >DEFENSOR DO MILHARAL</h2>
+            <div class="canvas-wrapper">
+                <canvas id="gameCanvas" width="800" height="500"></canvas>
+            </div>
+        </div>
+    </section>
+
+    <div id="settings-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="toggleSettings()">&times;</span>
+            <h3>CONFIGURAÇÕES</h3>
+            
+            <div class="setting-item">
+                <span>Fonte:</span>
+                <button onclick="changeFontSize(2)">+</button>
+                <button onclick="changeFontSize(-2)">-</button>
+            </div>
+
+            <div class="setting-item">
+                <span>Modo Escuro:</span>
+                <label class="switch">
+                    <input type="checkbox" id="dark-mode-toggle" onclick="toggleDarkMode()">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+
+            <div class="setting-item">
+                <button class="pixel-button-small" onclick="readPage()">OUVIR SITE (VOZ)</button>
+            </div>
+
+            <div id="sound-control" class="setting-item" style="display:none;">
+                <span>Som:</span>
+                <input type="range" min="0" max="100" value="50">
+            </div>
+
+            <div class="setting-item" id="menu-pausa-botoes" style="display:none; gap: 10px; margin-top: 15px;">
+                <button class="pixel-button-small" id="btn-retomar" onclick="pauseGame()" style="background-color: #2ecc71; color: white;">RETOMAR</button>
+                <button class="pixel-button-small" id="btn-reiniciar" onclick="reiniciarDoPause()" style="background-color: #f1c40f;">REINICIAR</button>
+                <button class="pixel-button-small" onclick="voltarDoPause()" style="background-color: #95a5a6;">SAIR</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        /**
+         * Gerencia o estado de abertura/fechamento do Modal de Configurações
+         * aplicando regras de exibição específicas de acordo com o jogo e tela ativos.
+         */
+        function toggleSettings() {
+            const modal = document.getElementById('settings-modal');
+            const botaoFecharX = modal.querySelector('.close-button') || modal.querySelector('.close');
+            const botoesExtras = document.getElementById('menu-pausa-botoes');
+            
+            const btnRetomar = document.getElementById('btn-retomar');
+            const btnReiniciar = document.getElementById('btn-reiniciar');
+            
+            modal.style.display = (modal.style.display === 'flex') ? 'none' : 'flex';
+            
+            if (modal.style.display === 'flex') {
+                const noJogo1Ativo = (typeof estadoJogo !== 'undefined' && estadoJogo === 'HORDAS');
+                const noJogo2Fim = (typeof jogoAtivo !== 'undefined' && jogoAtivo === 2 && typeof estadoQuiz !== 'undefined' && estadoQuiz === 'RESULTADO');
+
+                if (noJogo1Ativo) {
+                    if (botoesExtras) botoesExtras.style.display = 'flex'; 
+                    if (btnRetomar) btnRetomar.style.display = 'block';
+                    if (btnReiniciar) btnReiniciar.style.display = 'block';
+                    if (botaoFecharX) botaoFecharX.style.display = 'none';   
+                } 
+                else if (noJogo2Fim) {
+                    if (botoesExtras) botoesExtras.style.display = 'flex'; 
+                    if (btnRetomar) btnRetomar.style.display = 'none';
+                    if (btnReiniciar) btnReiniciar.style.display = 'none';
+                    if (botaoFecharX) botaoFecharX.style.display = 'none';
+                } 
+                else {
+                    if (botoesExtras) botoesExtras.style.display = 'none';  
+                    if (btnRetomar) btnRetomar.style.display = 'none';
+                    if (btnReiniciar) btnReiniciar.style.display = 'none';
+                    if (botaoFecharX) botaoFecharX.style.display = 'block';
+                }
+            } 
+            else {
+                if (botoesExtras) botoesExtras.style.display = 'none';
+            }
+        }
+
+        /**
+         * Alterna o arquivo de estilos global para aplicação de alto contraste (Modo Escuro).
+         */
+        function toggleDarkMode() {
+            document.body.classList.toggle('dark-mode');
+        }
+
+        /**
+         * Atualiza dinamicamente o tamanho base de tipografia do site via Propriedades CSS.
+         * Garante acessibilidade proporcional e impede quebra de elementos estruturais.
+         */
+        let currentFontSize = 16;
+        function changeFontSize(delta) {
+            currentFontSize += delta;
+            
+            if (currentFontSize < 12) currentFontSize = 12;
+            if (currentFontSize > 24) currentFontSize = 24;
+
+            document.documentElement.style.setProperty('--tamanho-base', currentFontSize + 'px');
+        }
+
+        /**
+         * Motor de leitura de tela auxiliar. Converte elementos textuais da interface 
+         * ativa em síntese de voz nativa no idioma local.
+         */
+        function readPage() {
+            const text = document.body.innerText;
+            const speech = new SpeechSynthesisUtterance(text);
+            speech.lang = 'pt-BR';
+            window.speechSynthesis.speak(speech);
+        }
+
+        /**
+         * Centralizador de rotas internas. Alterna a exibição das seções principais (views) 
+         * controlando a visibilidade via classes utilitárias CSS.
+         */
+        function goToPage(pageId) {
+            document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+            document.getElementById(pageId).classList.add('active');
+        }
+    </script>
+    
+    <script src="script.js"></script>
+</body>
+</html>
