@@ -48,7 +48,7 @@ const imgFazendeiro = new Image();
 imgFazendeiro.src = 'Gemini_Generated_Image_6ng3r06ng3r06ng3-removebg-preview.png'; 
 
 const imgMilho = new Image();
-imgMilho.src = 'Images/Gemini_Generated_Image_8ivadh8ivadh8iva-removebg-preview.png'; 
+imgMilho.src = 'Gemini_Generated_Image_8ivadh8ivadh8iva-removebg-preview.png'; 
 
 const imgPesticidaSustentavel = new Image();
 imgPesticidaSustentavel.src = 'Images/Gemini_Generated_Image_ynpezzynpezzynpe-removebg-preview.png';
