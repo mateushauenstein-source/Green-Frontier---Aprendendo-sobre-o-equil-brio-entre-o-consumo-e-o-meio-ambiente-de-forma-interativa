@@ -45,7 +45,7 @@ const imgCenarioJogo = new Image();
 imgCenarioJogo.src = 'Gemini_Generated_Image_wc4usqwc4usqwc4u.png'; 
 
 const imgFazendeiro = new Image();
-imgFazendeiro.src = 'Images/Gemini_Generated_Image_6ng3r06ng3r06ng3-removebg-preview.png'; 
+imgFazendeiro.src = 'Gemini_Generated_Image_6ng3r06ng3r06ng3-removebg-preview.png'; 
 
 const imgMilho = new Image();
 imgMilho.src = 'Images/Gemini_Generated_Image_8ivadh8ivadh8iva-removebg-preview.png'; 
