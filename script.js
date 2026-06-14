@@ -51,7 +51,7 @@ const imgMilho = new Image();
 imgMilho.src = 'Gemini_Generated_Image_8ivadh8ivadh8iva-removebg-preview.png'; 
 
 const imgPesticidaSustentavel = new Image();
-imgPesticidaSustentavel.src = 'Images/Gemini_Generated_Image_ynpezzynpezzynpe-removebg-preview.png';
+imgPesticidaSustentavel.src = 'Gemini_Generated_Image_ynpezzynpezzynpe-removebg-preview.png';
 
 const imgPesticidaQuimico = new Image();
 imgPesticidaQuimico.src = 'Images/Gemini_Generated_Image_am3h9oam3h9oam3h-removebg-preview.png';
