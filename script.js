@@ -28,7 +28,7 @@ const musicaResultado = new Audio('8bitvictory.ogg');
 musicaResultado.loop = true;
 
 const somAcertoQuiz = new Audio('Victory!.wav');
-const somErroQuiz = new Audio('sons/KL Peach Game Over 1.mp3');
+const somErroQuiz = new Audio('KL Peach Game Over 1.mp3');
 
 /* ==========================================================================
    MAPEAMENTO E INSTANCIAÇÃO DE TEXTURAS / IMAGENS
