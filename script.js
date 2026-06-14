@@ -7,7 +7,7 @@ const ctx = canvas.getContext('2d');
 /* ==========================================================================
    GERENCIAMENTO DE ATIVOS DE ÁUDIO (SYSTEM AUDIO LOGIC)
    ========================================================================== */
-const somFundoMenu = new Audio('sons/Juhani Junkala [Chiptune Adventures] 1. Stage 1.ogg'); 
+const somFundoMenu = new Audio('Juhani Junkala [Chiptune Adventures] 1. Stage 1.ogg'); 
 const somFundoJogo = new Audio('sons/8BitBattleLoop.ogg'); 
 const somFundoChefe = new Audio('sons/8-bit_danger_strong_boss.mp3'); 
 const somMorteInseto = new Audio('sons/hitHurt.wav'); 
