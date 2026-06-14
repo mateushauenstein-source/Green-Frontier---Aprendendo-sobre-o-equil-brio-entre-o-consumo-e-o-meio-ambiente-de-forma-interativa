@@ -21,7 +21,7 @@ somFundoChefe.loop = true;
 const musicaInstrucoes = new Audio('8bit_action_ending_bpm112.mp3');
 musicaInstrucoes.loop = true;
 
-const musicaPerguntas = new Audio('sons/kim_lightyear_-_you_and_i.mp3');
+const musicaPerguntas = new Audio('kim_lightyear_-_you_and_i.mp3');
 musicaPerguntas.loop = true;
 
 const musicaResultado = new Audio('sons/8bitvictory.ogg');
