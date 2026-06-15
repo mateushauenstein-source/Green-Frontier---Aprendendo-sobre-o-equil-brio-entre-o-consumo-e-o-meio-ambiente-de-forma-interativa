@@ -73,7 +73,7 @@ const imgFazendeiroQuiz = new Image();
 imgFazendeiroQuiz.src = 'Gemini_Generated_Image_6zsuxe6zsuxe6zsu-removebg-preview.png';
 
 const imgOuro = new Image(); 
-imgOuro.src = 'Images/Gemini_Generated_Image_6058pu6058pu6058-removebg-preview.png';
+imgOuro.src = 'Gemini_Generated_Image_6058pu6058pu6058-removebg-preview.png';
 
 const imgPrata = new Image(); 
 imgPrata.src = 'Images/Gemini_Generated_Image_y7tj0jy7tj0jy7tj-removebg-preview.png';
