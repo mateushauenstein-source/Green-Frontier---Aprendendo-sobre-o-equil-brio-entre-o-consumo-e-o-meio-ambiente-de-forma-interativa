@@ -63,7 +63,7 @@ const imgLagarta = new Image();
 imgLagarta.src = 'Gemini_Generated_Image_h04flkh04flkh04f-removebg-preview.png';
 
 const imgChefao = new Image();
-imgChefao.src = 'Images/Gemini_Generated_Image_jmhj0bjmhj0bjmhj-removebg-preview.png';
+imgChefao.src = 'Gemini_Generated_Image_jmhj0bjmhj0bjmhj-removebg-preview.png';
 
 /* Ativos de Imagem do Quiz */
 const imgFundoQuiz = new Image(); 
