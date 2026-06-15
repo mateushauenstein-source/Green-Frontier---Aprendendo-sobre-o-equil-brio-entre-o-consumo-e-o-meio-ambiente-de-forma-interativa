@@ -76,7 +76,7 @@ const imgOuro = new Image();
 imgOuro.src = 'Gemini_Generated_Image_6058pu6058pu6058-removebg-preview.png';
 
 const imgPrata = new Image(); 
-imgPrata.src = 'Images/Gemini_Generated_Image_y7tj0jy7tj0jy7tj-removebg-preview.png';
+imgPrata.src = 'Gemini_Generated_Image_y7tj0jy7tj0jy7tj-removebg-preview.png';
 
 const imgBronze = new Image(); 
 imgBronze.src = 'Images/Gemini_Generated_Image_ll293tll293tll29-removebg-preview.png';
