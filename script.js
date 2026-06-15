@@ -60,7 +60,7 @@ const imgGafanhoto = new Image();
 imgGafanhoto.src = 'Gemini_Generated_Image_5tb41g5tb41g5tb4-removebg-preview.png';
 
 const imgLagarta = new Image();
-imgLagarta.src = 'Images/Gemini_Generated_Image_h04flkh04flkh04f-removebg-preview.png';
+imgLagarta.src = 'Gemini_Generated_Image_h04flkh04flkh04f-removebg-preview.png';
 
 const imgChefao = new Image();
 imgChefao.src = 'Images/Gemini_Generated_Image_jmhj0bjmhj0bjmhj-removebg-preview.png';
