@@ -79,7 +79,7 @@ const imgPrata = new Image();
 imgPrata.src = 'Gemini_Generated_Image_y7tj0jy7tj0jy7tj-removebg-preview.png';
 
 const imgBronze = new Image(); 
-imgBronze.src = 'Images/Gemini_Generated_Image_ll293tll293tll29-removebg-preview.png';
+imgBronze.src = 'Gemini_Generated_Image_ll293tll293tll29-removebg-preview.png';
 
 /* ==========================================================================
    VARIÁVEIS DE CONTROLE DE ESTADO GLOBAL (FINITE STATE MACHINE)
