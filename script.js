@@ -70,7 +70,7 @@ const imgFundoQuiz = new Image();
 imgFundoQuiz.src = 'Gemini_Generated_Image_ig0qdjig0qdjig0q.png';
 
 const imgFazendeiroQuiz = new Image(); 
-imgFazendeiroQuiz.src = 'Images/Gemini_Generated_Image_6zsuxe6zsuxe6zsu-removebg-preview.png';
+imgFazendeiroQuiz.src = 'Gemini_Generated_Image_6zsuxe6zsuxe6zsu-removebg-preview.png';
 
 const imgOuro = new Image(); 
 imgOuro.src = 'Images/Gemini_Generated_Image_6058pu6058pu6058-removebg-preview.png';
