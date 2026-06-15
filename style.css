@@ -42,7 +42,7 @@ body.dark-mode {
     justify-content: center;
     text-align: center;
     position: relative;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('Gemini_Generated_Image_ksduu5ksduu5ksdu.png');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../Gemini_Generated_Image_ksduu5ksduu5ksdu.png');
     background-size: cover;
     background-position: center;
 }
