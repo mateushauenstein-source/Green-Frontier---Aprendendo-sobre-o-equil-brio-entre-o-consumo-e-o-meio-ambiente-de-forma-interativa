@@ -67,7 +67,7 @@ imgChefao.src = 'Images/Gemini_Generated_Image_jmhj0bjmhj0bjmhj-removebg-preview
 
 /* Ativos de Imagem do Quiz */
 const imgFundoQuiz = new Image(); 
-imgFundoQuiz.src = 'Images/Gemini_Generated_Image_ig0qdjig0qdjig0q.png';
+imgFundoQuiz.src = 'Gemini_Generated_Image_ig0qdjig0qdjig0q.png';
 
 const imgFazendeiroQuiz = new Image(); 
 imgFazendeiroQuiz.src = 'Images/Gemini_Generated_Image_6zsuxe6zsuxe6zsu-removebg-preview.png';
